@@ -17,8 +17,8 @@ def NSL_preprocessing():
     # 暂不处理 service 70种
     nouse = ["service"]
 
-    df_train = pd.read_csv("./datas/NSL-KDD/KDDTrain+.csv", low_memory=False)
-    df_test = pd.read_csv("./datas/NSL-KDD/KDDTest+.csv", low_memory=False)
+    df_train = pd.read_csv("datas/NSL-KDD/20 Percent Training Set.csv", low_memory=False)
+    df_test = pd.read_csv("./datas/NSL-KDD/Small Training Set.csv", low_memory=False)
 
     # 得到标注
     train_label = df_train["class"]
